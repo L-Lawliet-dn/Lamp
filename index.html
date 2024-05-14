@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamp</title>
+    <style>
+        img {
+            height:400px;
+            width: 400px;
+            border: 8px solid #101010;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+<img id="lampImage" src="lamp-off.webp" alt="Lamp Off">
+<button onclick="turnOnLamp()">Turn on lamp</button>
+<button onclick="turnOffLamp()">Turn off lamp</button>
+
+<script>
+    function turnOnLamp() {
+        var lamp = document.getElementById("lampImage");
+        lamp.src = "lamp-on.jpeg";
+    }
+
+    function turnOffLamp(){
+        var lamp = document.getElementById("lampImage");
+        lamp.src = "lamp-off.webp";
+    }
+</script>
+</body>
+</html>
